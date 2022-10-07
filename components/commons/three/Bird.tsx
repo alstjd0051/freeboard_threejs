@@ -5,7 +5,8 @@ import { useAnimations, useGLTF } from "@react-three/drei";
 interface Props {
   speed: number;
   factor: number | bigint | any;
-  url: String;
+  url: string[];
+  position?: string[] | number[];
 }
 
 export default function Bird({ speed, factor, url, ...props }: Props) {
