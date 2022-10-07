@@ -32,6 +32,7 @@ export default function BirdPage() {
                 factor={factor}
                 speed={speed}
                 url={`/glb/${bird}.glb`}
+                position={[x, y, z]}
               />
             );
           })}
