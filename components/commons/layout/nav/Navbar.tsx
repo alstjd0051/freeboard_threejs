@@ -1,11 +1,15 @@
 import Link from "next/link";
+import { useRouter } from "next/router";
 import React from "react";
 
 const Navbar = () => {
+  const router = useRouter();
   return (
     <div className="w-full h-20 p-4 fixed z-[100] font-neue ">
       <div className=" flex items-center justify-between w-full h-full px-2 text-3xl font-bold  ">
-        <span>Showkat.</span>
+        <Link href={"/"}>
+          <span className="cursor-pointer">Tyler Song</span>
+        </Link>
         <div>
           <ul className="hidden md:flex ">
             <Link href="/about">
