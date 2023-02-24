@@ -22,7 +22,7 @@ const Box = (props: Props) => {
       onPointerOut={(e) => setHoverd(false)}
     >
       <boxGeometry args={[1, 1, 1]} />
-      <meshStandardMaterial color={"orange"} />
+      <meshStandardMaterial color={hoverd ? "hotpink" : "orange"} />
     </mesh>
   );
 };
